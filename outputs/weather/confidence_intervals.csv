@@ -1,0 +1,9 @@
+Model,Score,Test value,Low,High
+Decision Tree,Accuracy,0.4991,0.4679,0.5284
+Decision Tree,F1,0.4915,0.4611,0.521
+Naive Bayes,Accuracy,0.4716,0.4422,0.5019
+Naive Bayes,F1,0.4762,0.444,0.5064
+Random Forest,Accuracy,0.5138,0.4853,0.544
+Random Forest,F1,0.5093,0.4805,0.5389
+Always cloudy,Accuracy,0.5257,0.4982,0.556
+Always cloudy,F1,0.2297,0.2217,0.2382

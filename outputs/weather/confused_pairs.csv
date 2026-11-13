@@ -1,0 +1,7 @@
+Real class,Predicted as,Cases,Share of the real class
+cloudy,sunny,190,0.332
+cloudy,rainy,116,0.202
+rainy,cloudy,77,0.279
+sunny,cloudy,77,0.32
+rainy,sunny,41,0.149
+sunny,rainy,29,0.12

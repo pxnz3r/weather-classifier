@@ -3,6 +3,9 @@ report.py - which saved tables and figures make up the results. The app's
 Results tab and docs/results.md both read this list, so they always match.
 """
 
+from pxlab.tabular.study import study_sections
+from weather_classifier.spec import WEATHER_SPEC
+
 FOLDER = "weather"
 
 
@@ -26,6 +29,7 @@ def results_sections():
                 ("figure", f"{FOLDER}/confusion_matrices.png"),
             ],
         ),
+        *study_sections(WEATHER_SPEC, FOLDER),
         (
             "Inputs",
             [

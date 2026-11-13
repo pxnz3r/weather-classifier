@@ -74,6 +74,17 @@
     ]
   },
   "category_options": {},
+  "findings": [
+    "Random Forest scores F1 0.509 on the test set (95% interval 0.481 to 0.539); the baseline that ignores the inputs (Always cloudy) scores 0.230.",
+    "Random Forest against Decision Tree on right or wrong answers (McNemar): could be chance (p = 0.323).",
+    "Random Forest against Naive Bayes on right or wrong answers (McNemar): real difference (p = 0.011).",
+    "Random Forest against Always cloudy on right or wrong answers (McNemar): could be chance (p = 0.624).",
+    "Decision Tree overfits: training f1 macro 0.530 against validation 0.476; validation is still rising, so more data would likely help.",
+    "Naive Bayes generalises well: training and validation f1 macro are close (+0.012); validation has levelled off, so more data alone would help little.",
+    "Random Forest overfits: training f1 macro 0.768 against validation 0.518; validation is still rising, so more data would likely help.",
+    "The most common mix-up: cloudy predicted as sunny (190 cases, 33% of cloudy).",
+    "When Random Forest is at least 90% sure it is right 80% of the time (1% of test cases)."
+  ],
   "model_files": {
     "Decision Tree": "decision_tree.joblib",
     "Naive Bayes": "naive_bayes.joblib",

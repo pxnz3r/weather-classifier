@@ -1,0 +1,4 @@
+Best model,Compared with,Best is better on,Other is better on,Test,p-value,Verdict
+Random Forest,Decision Tree,123,107,McNemar,0.3226,Could be chance
+Random Forest,Naive Bayes,182,136,McNemar,0.0115,Real difference
+Random Forest,Always cloudy,293,306,McNemar,0.624,Could be chance

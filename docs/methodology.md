@@ -39,6 +39,7 @@ Open-Meteo works the weather code out from cloud cover and rainfall, so those ar
 5. **Test scores**: accuracy and macro precision, recall and F1 on the unseen days. Confusion matrices.
 6. **Inputs**: the two main models trained again on the brief's three inputs only.
 7. **Explanations**: Naive Bayes's bell curve per input and type; the tree's full rules; permutation importance on the test days, 10 shuffles per input.
+8. **In-depth analysis** (`pxlab.tabular.study`): 1,000-round bootstrap 95% intervals for the headline test scores, next to a baseline that ignores the inputs; McNemar's test of the best model against each other model; learning curves; and an error analysis that compares the inputs of right and wrong answers, lists the classes the model mixes up and shows how accuracy depends on the model's confidence. Each finding is one sentence in `outputs/weather/key_findings.csv`.
 
 ## Limits
 
