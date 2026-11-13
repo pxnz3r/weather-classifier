@@ -1,0 +1,98 @@
+{
+  "dataset": "Open-Meteo London, noon readings",
+  "classes": [
+    "cloudy",
+    "rainy",
+    "sunny"
+  ],
+  "test_days": [
+    "2022-01-06",
+    "2024-12-31"
+  ],
+  "best_model": "Random Forest",
+  "test_scores": {
+    "Decision Tree": {
+      "Accuracy": 0.4990825688073395,
+      "Precision": 0.4879101216092747,
+      "Recall": 0.5073551304482161,
+      "F1": 0.49145530372512264
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.47155963302752296,
+      "Precision": 0.49081543527757815,
+      "Recall": 0.5252884083473677,
+      "F1": 0.47617182123775814
+    },
+    "Random Forest": {
+      "Accuracy": 0.5137614678899083,
+      "Precision": 0.5081696265884522,
+      "Recall": 0.532866109869037,
+      "F1": 0.5092674833971759
+    },
+    "Always cloudy": {
+      "Accuracy": 0.5256880733944954,
+      "Precision": 0.17522935779816515,
+      "Recall": 0.3333333333333333,
+      "F1": 0.22970535177390258
+    }
+  },
+  "cv_scores": {
+    "Decision Tree": 0.4896654861817793,
+    "Naive Bayes": 0.45836482687915925,
+    "Random Forest": 0.5332793622277757,
+    "Always cloudy": 0.23704992461471247
+  },
+  "tree_leaves": 48,
+  "tree_depth": 6,
+  "default_values": {
+    "temperature": 13.4,
+    "humidity": 69.0,
+    "wind_speed": 16.2,
+    "pressure": 1016.3,
+    "pressure_change": 0.2
+  },
+  "feature_ranges": {
+    "temperature": [
+      -4.7,
+      34.7
+    ],
+    "humidity": [
+      29.0,
+      100.0
+    ],
+    "wind_speed": [
+      0.0,
+      52.7
+    ],
+    "pressure": [
+      968.3,
+      1048.3
+    ],
+    "pressure_change": [
+      -13.9,
+      17.6
+    ]
+  },
+  "category_options": {},
+  "model_files": {
+    "Decision Tree": "decision_tree.joblib",
+    "Naive Bayes": "naive_bayes.joblib",
+    "Random Forest": "random_forest.joblib",
+    "Always cloudy": "always_cloudy.joblib"
+  },
+  "best_params": {
+    "Decision Tree": {
+      "class_weight": "balanced",
+      "max_depth": 6,
+      "min_samples_leaf": 30
+    },
+    "Naive Bayes": {
+      "priors": "[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]"
+    },
+    "Random Forest": {
+      "class_weight": "balanced",
+      "min_samples_leaf": 5
+    },
+    "Always cloudy": {}
+  }
+}

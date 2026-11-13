@@ -1,0 +1,142 @@
+|--- Air pressure (hPa) <= 1015.25
+|   |--- Relative humidity (%) <= 71.50
+|   |   |--- Relative humidity (%) <= 49.50
+|   |   |   |--- Relative humidity (%) <= 42.50
+|   |   |   |   |--- class: sunny
+|   |   |   |--- Relative humidity (%) >  42.50
+|   |   |   |   |--- Relative humidity (%) <= 47.50
+|   |   |   |   |   |--- class: cloudy
+|   |   |   |   |--- Relative humidity (%) >  47.50
+|   |   |   |   |   |--- class: sunny
+|   |   |--- Relative humidity (%) >  49.50
+|   |   |   |--- Temperature (°C) <= 10.45
+|   |   |   |   |--- Wind speed (km/h) <= 19.20
+|   |   |   |   |   |--- Temperature (°C) <= 7.65
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |   |--- Temperature (°C) >  7.65
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |--- Wind speed (km/h) >  19.20
+|   |   |   |   |   |--- Air pressure (hPa) <= 1007.20
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |   |--- Air pressure (hPa) >  1007.20
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |--- Temperature (°C) >  10.45
+|   |   |   |   |--- Air pressure (hPa) <= 1005.85
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) <= 1.85
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) >  1.85
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |--- Air pressure (hPa) >  1005.85
+|   |   |   |   |   |--- Relative humidity (%) <= 65.50
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |   |--- Relative humidity (%) >  65.50
+|   |   |   |   |   |   |--- class: rainy
+|   |--- Relative humidity (%) >  71.50
+|   |   |--- Pressure change since 6 am (hPa) <= 1.15
+|   |   |   |--- Relative humidity (%) <= 83.50
+|   |   |   |   |--- Temperature (°C) <= 15.05
+|   |   |   |   |   |--- Temperature (°C) <= 6.25
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |   |--- Temperature (°C) >  6.25
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |--- Temperature (°C) >  15.05
+|   |   |   |   |   |--- Air pressure (hPa) <= 1012.20
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |   |--- Air pressure (hPa) >  1012.20
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |--- Relative humidity (%) >  83.50
+|   |   |   |   |--- Pressure change since 6 am (hPa) <= -0.95
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) <= -6.60
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) >  -6.60
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |--- Pressure change since 6 am (hPa) >  -0.95
+|   |   |   |   |   |--- Temperature (°C) <= 11.80
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |   |--- Temperature (°C) >  11.80
+|   |   |   |   |   |   |--- class: rainy
+|   |   |--- Pressure change since 6 am (hPa) >  1.15
+|   |   |   |--- Temperature (°C) <= 12.05
+|   |   |   |   |--- Relative humidity (%) <= 81.50
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) <= 1.95
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) >  1.95
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |--- Relative humidity (%) >  81.50
+|   |   |   |   |   |--- Air pressure (hPa) <= 1001.70
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |   |--- Air pressure (hPa) >  1001.70
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |--- Temperature (°C) >  12.05
+|   |   |   |   |--- Wind speed (km/h) <= 15.85
+|   |   |   |   |   |--- class: rainy
+|   |   |   |   |--- Wind speed (km/h) >  15.85
+|   |   |   |   |   |--- Temperature (°C) <= 15.05
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |   |   |--- Temperature (°C) >  15.05
+|   |   |   |   |   |   |--- class: rainy
+|--- Air pressure (hPa) >  1015.25
+|   |--- Relative humidity (%) <= 56.50
+|   |   |--- Temperature (°C) <= 22.55
+|   |   |   |--- Air pressure (hPa) <= 1021.45
+|   |   |   |   |--- Air pressure (hPa) <= 1019.45
+|   |   |   |   |   |--- Relative humidity (%) <= 48.50
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |   |--- Relative humidity (%) >  48.50
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |--- Air pressure (hPa) >  1019.45
+|   |   |   |   |   |--- Wind speed (km/h) <= 14.40
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |   |--- Wind speed (km/h) >  14.40
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |--- Air pressure (hPa) >  1021.45
+|   |   |   |   |--- Temperature (°C) <= 10.70
+|   |   |   |   |   |--- class: cloudy
+|   |   |   |   |--- Temperature (°C) >  10.70
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) <= -1.05
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |   |--- Pressure change since 6 am (hPa) >  -1.05
+|   |   |   |   |   |   |--- class: sunny
+|   |   |--- Temperature (°C) >  22.55
+|   |   |   |--- Wind speed (km/h) <= 11.10
+|   |   |   |   |--- Wind speed (km/h) <= 7.90
+|   |   |   |   |   |--- class: sunny
+|   |   |   |   |--- Wind speed (km/h) >  7.90
+|   |   |   |   |   |--- class: sunny
+|   |   |   |--- Wind speed (km/h) >  11.10
+|   |   |   |   |--- class: sunny
+|   |--- Relative humidity (%) >  56.50
+|   |   |--- Relative humidity (%) <= 85.50
+|   |   |   |--- Pressure change since 6 am (hPa) <= 3.85
+|   |   |   |   |--- Air pressure (hPa) <= 1025.15
+|   |   |   |   |   |--- Temperature (°C) <= 8.45
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |   |--- Temperature (°C) >  8.45
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |--- Air pressure (hPa) >  1025.15
+|   |   |   |   |   |--- Relative humidity (%) <= 75.50
+|   |   |   |   |   |   |--- class: sunny
+|   |   |   |   |   |--- Relative humidity (%) >  75.50
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |--- Pressure change since 6 am (hPa) >  3.85
+|   |   |   |   |--- Temperature (°C) <= 7.95
+|   |   |   |   |   |--- class: sunny
+|   |   |   |   |--- Temperature (°C) >  7.95
+|   |   |   |   |   |--- class: sunny
+|   |   |--- Relative humidity (%) >  85.50
+|   |   |   |--- Air pressure (hPa) <= 1024.85
+|   |   |   |   |--- Air pressure (hPa) <= 1018.25
+|   |   |   |   |   |--- class: rainy
+|   |   |   |   |--- Air pressure (hPa) >  1018.25
+|   |   |   |   |   |--- Wind speed (km/h) <= 11.55
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |   |--- Wind speed (km/h) >  11.55
+|   |   |   |   |   |   |--- class: rainy
+|   |   |   |--- Air pressure (hPa) >  1024.85
+|   |   |   |   |--- Pressure change since 6 am (hPa) <= 0.05
+|   |   |   |   |   |--- class: cloudy
+|   |   |   |   |--- Pressure change since 6 am (hPa) >  0.05
+|   |   |   |   |   |--- Air pressure (hPa) <= 1029.15
+|   |   |   |   |   |   |--- class: cloudy
+|   |   |   |   |   |--- Air pressure (hPa) >  1029.15
+|   |   |   |   |   |   |--- class: cloudy

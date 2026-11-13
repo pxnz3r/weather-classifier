@@ -1,0 +1,7 @@
+Column,Type,Missing,Distinct values
+temperature,numeric,0,323
+humidity,numeric,0,75
+wind_speed,numeric,0,405
+pressure,numeric,0,582
+pressure_change,numeric,0,199
+condition,target,0,3

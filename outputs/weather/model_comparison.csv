@@ -1,0 +1,5 @@
+Model,Role,CV f1 macro,Accuracy,Precision,Recall,F1
+Decision Tree,Main,0.49,0.499,0.488,0.507,0.491
+Naive Bayes,Main,0.458,0.472,0.491,0.525,0.476
+Random Forest,Benchmark beyond the course,0.533,0.514,0.508,0.533,0.509
+Always cloudy,Baseline,0.237,0.526,0.175,0.333,0.23

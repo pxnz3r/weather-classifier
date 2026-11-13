@@ -1,0 +1,3 @@
+Model,"Temperature, humidity, wind",Plus pressure and its change
+Decision Tree,0.452,0.491
+Naive Bayes,0.399,0.476

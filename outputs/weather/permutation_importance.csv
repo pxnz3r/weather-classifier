@@ -1,0 +1,6 @@
+,Decision Tree,Naive Bayes,Random Forest
+Relative humidity (%),0.079,0.0465,0.0876
+Air pressure (hPa),0.0723,0.0503,0.0792
+Temperature (°C),0.0227,0.014,0.0344
+Pressure change since 6 am (hPa),0.0032,0.0136,0.0156
+Wind speed (km/h),0.0022,0.0009,0.0069
