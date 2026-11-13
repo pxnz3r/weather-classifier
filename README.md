@@ -1,8 +1,28 @@
-# Weather classifier
+<div align="center">
 
-Classifies the weather at noon as sunny, cloudy or rainy from temperature, humidity and wind, with a Decision Tree and Naive Bayes, and tests them on three years they never saw. Built on 15 years of London weather from the Open-Meteo archive, with an interactive demo that explains each verdict.
+<h1>Weather classifier</h1>
 
-![What Naive Bayes learned: one bell curve per input and weather type](outputs/figures/weather/class_curves.png)
+<p>Classifies the weather at noon as sunny, cloudy or rainy from temperature, humidity and wind, with a Decision Tree and Naive Bayes, and tests them on three years they never saw. Built on 15 years of London weather from the Open-Meteo archive, with an interactive demo that explains each verdict.</p>
+
+<p>
+<a href="https://github.com/pxnz3r/weather-classifier/actions/workflows/ci.yml"><img src="https://github.com/pxnz3r/weather-classifier/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<img src="https://img.shields.io/badge/python-3.14-blue" alt="Python 3.14">
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
+</p>
+
+<p><a href="docs/results.md">Results</a> · <a href="docs/methodology.md">Methodology</a> · <a href="docs/deploy.md">Deploy the demo</a></p>
+
+<img src="outputs/figures/weather/class_curves.png" width="720" alt="What Naive Bayes learned: one bell curve per input and weather type">
+
+</div>
+
+## How it works
+
+1. **Load and check** 15 years of London weather and label each noon as sunny, cloudy or rainy.
+2. **Tune** a Decision Tree and Naive Bayes with cross-validation on the earlier years.
+3. **Score once** on the last three years, which the models never saw.
+4. **Test how sure the scores are** with bootstrap intervals, a paired test against every rival, learning curves and a baseline that ignores the inputs.
+5. **Study the mistakes**: which weather gets confused for which, then **try it** in the Streamlit demo.
 
 ## Results
 
@@ -21,6 +41,18 @@ Trained on 4,360 noon readings from 2010 to early 2022; tested on the 1,090 days
 - **Accuracy misleads.** "Always cloudy" has the best accuracy and is useless. Macro F1 weighs the three types equally.
 
 Full tables and figures: [docs/results.md](docs/results.md). How it was done: [docs/methodology.md](docs/methodology.md).
+
+## How sure the results are
+
+**Weather at noon is hard to call.** Random Forest's macro F1 is 0.509 (95% interval 0.481 to 0.539) against 0.230 for always predicting cloudy.
+
+**The forest beats Naive Bayes but not the tree.** McNemar's test: p = 0.011 against Naive Bayes, p = 0.323 against the Decision Tree.
+
+**Both trees overfit, and more years would help.** The forest's training F1 is 0.768 against 0.518 on validation, and its validation curve is still rising.
+
+**Cloudy is the problem class.** The most common mix-up is cloudy predicted as sunny: 190 days, a third of all cloudy days.
+
+Every table and figure behind these is in [docs/results.md](docs/results.md).
 
 ## Run it
 
